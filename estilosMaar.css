@@ -29,3 +29,32 @@ footer {
     color: white;
 }
 
+header ul li {
+    display: inline-block;
+    line-height: 50px;
+    margin: 50px;
+
+}
+
+img {
+    margin: 0 auto;
+    float: center;
+    margin-left: -45%;
+    text-align: center;
+}
+
+header ul li a{
+    color: white;
+}
+
+a:hover{
+    background-color: rgb(67, 66, 87);
+    opacity: 50%;
+    transition: 0.5s;
+}
+
+footer section a{
+    float: right;
+    margin: 20px;
+    color: white;
+}
