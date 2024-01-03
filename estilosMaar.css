@@ -192,3 +192,11 @@ footer section a{
     background-size: cover;
     height: 100vh;
 }
+
+.fondo img{
+    display: grid;
+    margin: 0 auto;
+    height: auto;
+    width: auto;
+    align-items: center;
+}
