@@ -187,14 +187,10 @@ footer section a{
     }
 }
 /* termina la seccion de menu y comienza una nueva seccion */
+
+
 .fondo{
     background: linear-gradient(to bottom,#cc819ba8,rgba(77, 77, 189, 0.671)), url("https://images.unsplash.com/photo-1467803738586-46b7eb7b16a1?q=80&w=2832&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") no-repeat;
     background-size: cover;
     height: 100vh;
-}
-
-.fondo img{
-    display: grid;
-    margin: 0 auto;
-    align-items: center;
 }
