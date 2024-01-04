@@ -196,7 +196,5 @@ footer section a{
 .fondo img{
     display: grid;
     margin: 0 auto;
-    height: auto;
-    width: auto;
     align-items: center;
 }
