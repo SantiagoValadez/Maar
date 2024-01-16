@@ -7,7 +7,17 @@
 html {
     font-family: 'Montserrat', sans-serif;
 }
-
+/* EN ESTE APARTADO SE CAMBIA EL COLOR DE LOS ELEMENTOS DE LA PAGINA WEB */
+:root{
+    --principal: #ffffff;
+    --secundario: rgb(70, 65, 81);
+    --tercero: black;
+    --color-facebook: rgb(55, 23, 197);
+    --color-twitter: rgb(74, 165, 245);
+    --color-instagram: #e46de0;
+    --color-youtube:red;
+    --color-gris: grey;
+}
 /*body {
     margin: 0;
     background-color: #efefef;
@@ -94,11 +104,11 @@ header h1{
     margin: 0 auto;
 }*/
 
-footer {
+/*footer {
     background-color: black;
     padding: 3rem 2rem;
     color: rgb(255, 255, 255);
-}
+}*/
 
 /*ul li {
     display: inline-block;
@@ -194,3 +204,99 @@ footer section a{
     background-size: cover;
     height: 100vh;
 }
+
+/* FOOTER */
+footer{
+    position: relative;
+    background: var(--secundario);
+    width: 100%;
+    bottom: 0;
+}
+
+footer::before{
+    content:''; 
+    position: absolute;
+    left: 0;
+    top: 100px;
+    width: 100%;
+    background: var(--principal);
+}
+
+footer .content{
+    max-width: 1280px;
+    margin: auto;
+    padding: 30px 40px 30px 30px;
+}
+
+footer .content .top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+footer .top .logo-details{
+    color: var(--principal);
+    font-size: 32px;
+}
+.content .top .media-icons{
+    display: flex;
+}
+.content .top .media-icons a{
+    height: 40px;
+    width: 40px;
+    margin: 0 8px;
+    border-radius: 50%;
+    text-align: center;
+    color: var(--principal);
+    font-size: 19px;
+    direction: none;
+    line-height: 40px;
+    transition: all 0.4s ease;
+}
+
+/* ICONOS DE REDES SOCIALES */
+
+.top .media-icons a:nth-child(1){
+    background: var(--color-facebook);
+}
+
+.top .media-icons a:nth-child(1):hover{
+    color: var(--color-facebook);
+    background: var(--principal);
+}
+
+.top .media-icons a:nth-child(2){
+    background: var(--color-twitter);
+}
+
+.top .media-icons a:nth-child(2):hover{
+    color: var(--color-twittert);
+    background: var(--principal);
+}
+.top .media-icons a:nth-child(3){
+    background: var(--color-instagram);
+}
+
+.top .media-icons a:nth-child(3):hover{
+    color: var(--color-instagram);
+    background: var(--principal);
+}
+.top .media-icons a:nth-child(4){
+    background: var(--color-youtube);
+}
+
+.top .media-icons a:nth-child(4):hover{
+    color: var(--color-youtube);
+    background: var(--principal);
+}
+/* ICONOS DE REDES SOCIALES */
+
+footer .content .link-boxes{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* FOOTER */
