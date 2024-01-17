@@ -10,7 +10,7 @@ html {
 /* EN ESTE APARTADO SE CAMBIA EL COLOR DE LOS ELEMENTOS DE LA PAGINA WEB */
 :root{
     --principal: #ffffff;
-    --secundario: rgb(70, 65, 81);
+    --secundario: rgb(47, 45, 49);
     --tercero: black;
     --color-facebook: rgb(55, 23, 197);
     --color-twitter: rgb(74, 165, 245);
@@ -27,6 +27,8 @@ nav{
     background-color: #000;
     height: 100px;
     color: white;
+    position: fixed;
+    width: 100%;
 }
 
 label.logo{
@@ -292,10 +294,62 @@ footer .top .logo-details{
 }
 /* ICONOS DE REDES SOCIALES */
 
+/* INFORMACION EN EL FOOTER */
 footer .content .link-boxes{
     width: 100%;
     display: flex;
     justify-content: space-between;
+}
+
+footer .content .link-boxes .box{
+    width: calc(100% / 5 - 10px);
+}
+
+.content .link-boxes .box .link-name{
+    color: var(--principal);
+    font-size: 19px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    position: relative;
+}
+/* INFORMACION EN EL FOOTER */
+
+/* LINEA DE SEPARACION EN EL FOOTER */
+.link-boxes .box .link-name::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    height: 3px;
+    width: 110px;
+    background: var(--principal);
+}
+
+/* LINEA DE SEPARACION EN EL FOOTER */
+
+.content .link-boxes .box li{
+    margin: 6px 0;
+    list-style: none;
+    
+}
+
+.content .link-boxes .box a{
+    color: var(--principal);
+    font-size: 17px;
+    font-weight: 400;
+    text-decoration: none;
+    opacity: .7;
+    
+}
+
+.content .link-boxes .box li a::hover{
+    opacity: 1;
+    text-decoration: none;
+}
+
+footer .bottom-detail{
+    width: 100%;
+    background: var(--tercero);
 }
 
 
